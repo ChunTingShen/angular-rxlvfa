@@ -1,0 +1,50 @@
+<div class="outer">
+  <div class="inner">
+    <p>Component 1</p>
+  </div>
+
+  <form [formGroup]="checkoutForm">
+    <div class="inner">
+      <input
+        class="inputbox"
+        id="name"
+        type="text"
+        placeholder="Name"
+        formControlName="name"
+      />
+    </div>
+
+    <div class="inner">
+      <input
+        class="inputbox"
+        id="email"
+        type="text"
+        placeholder="Email"
+        formControlName="email"
+      />
+    </div>
+
+    <div class="inner">
+      <input
+        class="inputbox"
+        id="phone"
+        type="text"
+        placeholder="Phone No"
+        formControlName="phone"
+      />
+    </div>
+
+    <div class="inner">
+      <input
+        class="inputbox"
+        id="address"
+        type="text"
+        placeholder="Address"
+        formControlName="address"
+      />
+    </div>
+  </form>
+  <div class="inner">
+    <button (click)="onSave()">Save</button>
+  </div>
+</div>
